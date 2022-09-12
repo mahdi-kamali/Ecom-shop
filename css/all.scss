@@ -1,0 +1,224 @@
+$color-1: white;
+$color-2: #ee384e;
+$color-3: #e5e5e5;
+
+$buttons-vertical-padding: 0.7em;
+$buttons-horizontal-padding: 1em;
+$buttons-fonts-size: 0.8rem;
+
+.main-page {
+    background-color: $color-1;
+    header {
+        box-shadow: 0rem 0.2rem 0.5rem 0.1rem rgba(0, 0, 0, 0.05);
+        padding: 2em;
+        width: 100%;
+        .user {
+            a {
+                border: 1px solid #e2e2e2;
+                border-radius: 5px;
+                color: #6e6e6e;
+                padding: $buttons-vertical-padding $buttons-horizontal-padding;
+                font-size: $buttons-fonts-size;
+            }
+        }
+    }
+
+    .products {
+        margin: 0 8% 3em 8%;
+        box-shadow: rgb(0 0 0 / 5%) 0px 6px 24px 0px, rgb(0 0 0 / 8%) 0px 0px 0px 1px;
+        border-radius: 0rem 0 0.3rem 0.3rem;
+        border-top: 0;
+        padding: 2em;
+        .products-header {
+            font-size: 1.5rem;
+        }
+        .products-body {
+            margin-top: 2rem;
+            .card {
+                box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 24%) 0px 1px 2px;
+                padding: 2em;
+                border-radius: 0.5rem;
+                .card-buttons {
+                    button,
+                    a {
+                        padding: $buttons-vertical-padding $buttons-horizontal-padding;
+                        border-radius: 0.3rem;
+                        font-size: $buttons-fonts-size;
+                    }
+                }
+            }
+        }
+    }
+
+    .product-detail-page {
+        display: grid;
+        grid-template-columns: 20rem 1fr;
+        margin: 0 8% 3em 8%;
+        box-shadow: rgb(0 0 0 / 5%) 0px 6px 24px 0px, rgb(0 0 0 / 8%) 0px 0px 0px 1px;
+        border-radius: 0rem 0 0.3rem 0.3rem;
+        border-top: 0;
+        padding: 2em;
+        .left {
+            padding: 2em;
+            font-weight: lighter;
+            h1 {
+                font-size: 1.5rem;
+                padding: 0.3em 1em;
+                border-radius: 100rem;
+            }
+            a {
+                padding: $buttons-vertical-padding $buttons-horizontal-padding;
+                font-size: $buttons-fonts-size;
+                align-self: start;
+                margin: 1rem;
+                border-radius: 0.3rem;
+                iconify-icon {
+                    font-size: 1.5rem;
+                }
+            }
+            .description {
+                opacity: 0.5;
+            }
+            .hint {
+                margin-top: 1rem;
+                strong {
+                    font-size: 1.2rem;
+                }
+                p {
+                    border-bottom: 0.1rem rgba(0, 0, 0, 0.1) solid;
+                    opacity: 0.5;
+                    padding-bottom: 0.3em;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+        .right {
+            form {
+                background-color: $color-3;
+                padding: 1em;
+                border-radius: 0.5rem;
+
+                .form-group {
+                    label {
+                        cursor: pointer;
+                    }
+                    iconify-icon {
+                        font-size: 1.5rem;
+                    }
+                    span {
+                        font-size: 0.8rem;
+                        background-color: white;
+                        padding: $buttons-vertical-padding $buttons-horizontal-padding;
+                        border-radius: 0.2rem;
+                    }
+                    a,
+                    button {
+                        font-size: $buttons-fonts-size;
+                        padding: $buttons-vertical-padding $buttons-horizontal-padding;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.admin-panel {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    header {
+        box-shadow: 0rem 0.2rem 0.5rem 0.1rem rgba(0, 0, 0, 0.05);
+        padding: 1em 2em;
+        width: 100%;
+        .right {
+            img {
+                width: 5rem;
+                border-radius: 50%;
+                aspect-ratio: 1/1;
+                object-fit: cover;
+            }
+            h1 {
+                font-size: 1.4rem;
+            }
+            small {
+                font-size: 1rem;
+            }
+        }
+        .mid {
+        }
+        .left {
+            a {
+                width: 17ch;
+                padding: 0.5em $buttons-horizontal-padding;
+                border-radius: 0.3rem;
+                font-size: $buttons-fonts-size;
+                iconify-icon {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
+    .panel-container {
+        display: flex;
+        flex-direction: row;   
+        height: 80vh;    
+        overflow: hidden;
+        aside {
+            width: 25rem;
+            padding: 2em;
+            height: 100%;
+            background-color: white;
+            box-shadow: 0rem 0.2rem 0.5rem 0.1rem rgba(0, 0, 0, 0.05);
+            ul {
+                a {
+                    font-weight: bold;
+                    font-size: 0.9rem;
+                    padding: $buttons-vertical-padding $buttons-horizontal-padding;
+                    iconify-icon {
+                        font-size: 1.7rem;
+                    }
+                    &:hover {
+                        background-color: black;
+                        color: white;
+                    }
+                }
+            }
+        }
+        main {
+            width: 100%;
+            padding: 5%;
+          
+            form {
+                a {
+                    padding: $buttons-vertical-padding $buttons-horizontal-padding;
+                    border-radius: 0.3rem;
+                }
+            }
+            table {
+                border-radius: 0.25rem;
+                a , button {
+                    min-width: 20ch;
+                    padding: $buttons-vertical-padding $buttons-horizontal-padding;
+                    font-size: 0.7rem;
+    
+                }
+                th {
+                    padding: 1em;
+                    &:first-child {
+                        border-radius: 0 0.5rem 0 0;
+                    }
+                    &:last-child {
+                        border-radius: 0.5rem  0 0 0;
+                    }
+                }
+                td {
+                    padding: 1em;
+                    text-align: center;
+                }
+                width: 100%;
+            }
+        }
+       
+    }
+}

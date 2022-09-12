@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه محصول</title>
+
+
+
+
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+
+
+    <!-- All Css -->
+    <link rel="stylesheet" href="/css/all.css">
+
+
+    <!-- Global Css -->
+    <link rel="stylesheet" href="/css/global.css">
+
+
+
+
+</head>
+
+<body class="main-page">
+
+    <header class="f-r-between">
+        <div class="right f-r-center g-2">
+            <div class="logo f-r-center">
+                <img src="/images/main-page/logo.svg" alt="">
+            </div>
+            <nav>
+                <ul class="f-r-center g-1">
+                    <li><a href="#">صفحه اصلی</a></li>
+                    <li><a href="#">محصولات</a></li>
+                    <li><a href="#">درباره ی ما</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="left">
+            <div class="user f-r-center g-05">
+                <a href="#" class="f-r-center g-03">
+                    پنل کاربری
+                    <iconify-icon icon="bxs:user"></iconify-icon>
+                </a>
+                <a href="#" class="f-r-center g-03">
+                    پنل مدیریت
+                    <iconify-icon icon="bxs:user"></iconify-icon>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="/images/slider/32898f691b9b97d316c7347a1b55b8745d1b10c8_1662727295.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="/images/slider/48cb707d4206a7026c2338b7e04de0f97b5a1efe_1662559804.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="/images/slider/7c84900a43d7212e11fa99b87e13ad7aaf70974b_1662552338.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <div class="swiper-scrollbar"></div>
+    </section>
+
+    <section class="product-detail-page">
+        <div class="right ">
+            <div class="image">
+                <img src="/images/products/2.jpg" alt="">
+            </div>
+            <form action="#" class="f-c-normal g-1" method="get" enctype="multipart/form-data">
+                <div class="form-group f-c-normal">
+                    <label class="f-r-center g-05">
+                        <iconify-icon icon="flat-color-icons:ok"></iconify-icon>
+                        <span class="f-r-center g-03">
+                            <iconify-icon icon="ant-design:upload-outlined"></iconify-icon>
+                            انتخاب عکس طراحی
+                        </span>
+                        <input class="d-none" type="file" accept="image/*">
+                        <button class="dark">ارسال</button>
+
+                    </label>
+                </div>
+                <div class="form-group f-c-normal">
+                    <a href="#" class="success f-r-center g-03">
+                        <iconify-icon icon="bi:bag-check-fill"></iconify-icon>افزودن به سبد خرید
+                    </a>
+                </div>
+            </form>
+        </div>
+        <div class="left f-c-start t-c-right g-1">
+            <h1 class="dark">
+                هودی سفید
+            </h1>
+            <p class="description">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده،
+                شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+                الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و
+                دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای
+                اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+            </p>
+
+            <div class="hint f-c-normal">
+                <strong>برای ایجاد طرح دلخواه خودتان ابتدا کلیک کنید</strong>
+                <a class="warning f-r-center g-03" href="#">
+                    <iconify-icon icon="dashicons:edit-page"></iconify-icon>ورود به سایت طراحی
+                </a>
+                <p>سپس عکس طرح را به فرم سمت راست عکس دریافتی را آپلود نمایید</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Iconify Js -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+
+    <!-- Swiper Js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+
+    <!-- All Js -->
+    <script src="/js/all.js"></script>
+
+
+
+</body>
+
+</html>

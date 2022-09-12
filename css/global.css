@@ -1,0 +1,228 @@
+@font-face {
+  font-family: "iranYekan";
+  src: url("/fonts/IranYekan-Medium.woff");
+}
+* {
+  box-sizing: border-box !important;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+img,
+svg {
+  display: flex;
+  width: 100%;
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  width: 100%;
+  align-self: center;
+  max-width: 1600px;
+  min-height: 100vh;
+  font-family: "iranYekan", sans-serif !important;
+}
+
+button, a {
+  all: unset;
+  cursor: pointer !important;
+  border-radius: 0.2rem;
+  transition: all 0.5s ease !important;
+}
+button:hover, a:hover {
+  scale: 0.95 !important;
+}
+
+.primary {
+  background-color: #0069d9 !important;
+  color: white !important;
+}
+
+.secondary {
+  background-color: #5a6268 !important;
+  color: white !important;
+}
+
+.success {
+  background-color: #218838 !important;
+  color: white !important;
+}
+
+.danger {
+  background-color: #c82333 !important;
+  color: white !important;
+}
+
+.warning {
+  background-color: #e0a800 !important;
+  color: white !important;
+}
+
+.info {
+  background-color: #138496 !important;
+  color: white !important;
+}
+
+.light {
+  background-color: #E2E6EA !important;
+  color: black !important;
+}
+
+.dark {
+  background-color: #23272B !important;
+  color: white !important;
+}
+
+.f-r-normal {
+  display: flex;
+  flex-direction: row;
+}
+
+.f-r-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-r-end {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+}
+
+.f-r-start {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+.f-r-between {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.f-r-evenly {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.f-r-around {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.f-c-normal {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-c-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-c-end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.f-c-start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.f-c-between {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.f-c-evenly {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.f-c-around {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.g-03 {
+  gap: 0.3rem;
+}
+
+.g-05 {
+  gap: 0.5rem;
+}
+
+.g-1 {
+  gap: 1rem;
+}
+
+.g-2 {
+  gap: 2rem;
+}
+
+.g-3 {
+  gap: 3rem;
+}
+
+.g {
+  display: grid;
+}
+
+.g-r-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
+}
+
+.a-center {
+  align-items: center;
+}
+
+.a-end {
+  align-items: end;
+}
+
+.a-start {
+  align-items: start;
+}
+
+.t-c-right {
+  text-align: right;
+  align-items: flex-start;
+}
+
+.d-none {
+  display: none;
+}/*# sourceMappingURL=global.css.map */
