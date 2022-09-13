@@ -216,6 +216,11 @@ button , a  {
     grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
 }
 
+.g-r-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(26%, 1fr));
+}
+
 // Align Items 
 .a-center {
     align-items: center;

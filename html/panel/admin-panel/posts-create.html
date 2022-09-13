@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه مدریت</title>
+
+
+
+
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+
+
+    <!-- All Css -->
+    <link rel="stylesheet" href="/css/all.css">
+
+
+    <!-- Global Css -->
+    <link rel="stylesheet" href="/css/global.css">
+
+
+
+
+</head>
+
+<body class="admin-panel">
+
+    <header class="f-r-between">
+        <div class="right">
+            <div class="admin f-r-center g-1">
+                <div class="admin-image">
+                    <img src="/images/panel/avatar.webp" alt="">
+                </div>
+                <div class="admin-info f-c-center a-start">
+                    <h1>خوش آمدید</h1>
+                    <div class="full-name">مدیر</div>
+                </div>
+            </div>
+        </div>
+        <div class="left ">
+            <a href="#" class="dark f-r-center g-05">
+                <iconify-icon icon="bx:exit"></iconify-icon> خروج
+            </a>
+        </div>
+    </header>
+
+    <div class="panel-container">
+        <aside class="f-c-normal g-3">
+            <h1>پنل مدیریت</h1>
+            <ul class="f-c-normal">
+                <li>
+                    <a href="#" class="f-r-start g-05">
+                        <iconify-icon icon="gridicons:multiple-users"></iconify-icon>
+                        کاربران
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="f-r-start g-05">
+                        <iconify-icon icon="akar-icons:shipping-box-01"></iconify-icon>
+                        پست ها
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="f-r-start g-05">
+                        <iconify-icon icon="bi:image-fill"></iconify-icon>
+                        طرح های کاربران
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main class="posts-create f-c-normal g-2">
+            <h1> پست جدید</h1>
+            <form class="f-c-normal g-1" action="#" method="get" enctype="multipart/form-data">
+                <div class="form-group f-r-start g-1">
+                    <label> عنوان محصول </label>
+                    <input type="text" name="title">
+                </div>
+                <div class="form-group f-r-start g-1">
+                    <label> توضیحات </label>
+                    <textarea name="description"></textarea>
+                </div>
+                <div class="form-group f-r-start g-1">
+                    <label> عکس </label>
+                    <input id="image-picker" type="file" name="image">
+                    <img id="image-element" src="/images/products/2.jpg" alt="">
+                </div>
+                <div class="form-group f-r-start g-1">
+                    <button class="success f-r-center g-03"><iconify-icon icon="el:ok"></iconify-icon> ثبت </button>
+                    <a href="#" class="danger f-r-center g-03"><iconify-icon icon="icons8:cancel-2"></iconify-icon>انصراف</a>
+                </div>
+            </form>
+        </main>
+    </div>
+
+
+    <!-- Iconify Js -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+
+    <!-- Swiper Js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+
+    <!-- All Js -->
+    <script src="/js/all.js"></script>
+
+
+
+</body>
+
+</html>

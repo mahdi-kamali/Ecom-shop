@@ -161,8 +161,8 @@ $buttons-fonts-size: 0.8rem;
 
     .panel-container {
         display: flex;
-        flex-direction: row;   
-        height: 80vh;    
+        flex-direction: row;
+        min-height: 80vh;
         overflow: hidden;
         aside {
             width: 25rem;
@@ -170,6 +170,7 @@ $buttons-fonts-size: 0.8rem;
             height: 100%;
             background-color: white;
             box-shadow: 0rem 0.2rem 0.5rem 0.1rem rgba(0, 0, 0, 0.05);
+            border-radius: 0 0 0rem 0.5rem;
             ul {
                 a {
                     font-weight: bold;
@@ -188,7 +189,7 @@ $buttons-fonts-size: 0.8rem;
         main {
             width: 100%;
             padding: 5%;
-          
+
             form {
                 a {
                     padding: $buttons-vertical-padding $buttons-horizontal-padding;
@@ -197,11 +198,11 @@ $buttons-fonts-size: 0.8rem;
             }
             table {
                 border-radius: 0.25rem;
-                a , button {
+                a,
+                button {
                     min-width: 20ch;
                     padding: $buttons-vertical-padding $buttons-horizontal-padding;
                     font-size: 0.7rem;
-    
                 }
                 th {
                     padding: 1em;
@@ -209,16 +210,106 @@ $buttons-fonts-size: 0.8rem;
                         border-radius: 0 0.5rem 0 0;
                     }
                     &:last-child {
-                        border-radius: 0.5rem  0 0 0;
+                        border-radius: 0.5rem 0 0 0;
                     }
                 }
                 td {
                     padding: 1em;
                     text-align: center;
+                    img {
+                        width: 100%;
+                        aspect-ratio: 1/1;
+                        max-width: 5rem;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                    p {
+                        max-height: 5rem;
+                    }
+                    span {
+                        margin: auto;
+                        width: 100%;
+                        max-width: 20rem;
+                        overflow: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
                 }
                 width: 100%;
             }
         }
-       
+        .posts-create {
+            form {
+                .form-group {
+                    label {
+                        font-size: 1rem;
+                        width: 14ch;
+                        &::after {
+                            content: " : ";
+                        }
+                    }
+                    input,
+                    textarea {
+                        all: unset;
+                        padding: 0.3em 1em;
+                        border-radius: 0.3rem;
+                        width: 100%;
+                        max-width: 40ch;
+                        box-shadow: 0 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+                        transition: all 0.5s ease;
+                        border: 0.1rem transparent solid;
+
+                        &:focus {
+                            box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.1);
+                            border: 0.1rem black solid;
+                        }
+                    }
+                    textarea {
+                        height: 20rem;
+                        max-width: 60ch;
+                    }
+                    img {
+                        width: 10rem;
+                        aspect-ratio: 1/1;
+                        object-fit: cover;
+                    }
+                    a,
+                    button {
+                        min-width: 13ch;
+                        padding: 0.3em 1em;
+                    }
+                }
+            }
+        }
+
+        .users-design {
+            .card {
+                border-radius: 0.5rem;
+                box-shadow: 0.3rem 0.3rem 0.5rem 0.1rem rgba(0, 0, 0, 0.1);
+                .card-header {
+                    img {
+                        width: 100%;
+                        aspect-ratio: 1/1;
+                        object-fit: cover;
+                        border-radius: 0.5rem;
+                    }
+                }
+                .card-body {
+                    .email {
+                        small {
+                            font-weight: bold;
+                        }
+                        span {
+                            width: 10ch;
+                            font-size: 0.9rem;
+                            &::after {
+                                content: " : ";
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
