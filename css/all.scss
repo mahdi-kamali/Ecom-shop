@@ -122,7 +122,7 @@ $buttons-fonts-size: 0.8rem;
     }
 }
 
-.admin-panel {
+.admin-panel , .user-panel {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -287,6 +287,7 @@ $buttons-fonts-size: 0.8rem;
             .card {
                 border-radius: 0.5rem;
                 box-shadow: 0.3rem 0.3rem 0.5rem 0.1rem rgba(0, 0, 0, 0.1);
+                height: max-content;
                 .card-header {
                     img {
                         width: 100%;
@@ -313,3 +314,43 @@ $buttons-fonts-size: 0.8rem;
         }
     }
 }
+
+.user-panel {
+    .card {
+        border-radius: 0.5rem;
+        box-shadow: 0.3rem 0.3rem 0.5rem 0.1rem rgba(0, 0, 0, 0.1);
+        height: max-content;
+        .card-header {
+            img {
+                width: 100%;
+                aspect-ratio: 1/1;
+                object-fit: cover;
+                border-radius: 0.5rem;
+            }
+        }
+        .card-body {
+            .email {
+                h1 {
+                    font-weight: bold;
+                    font-size: 1rem;
+                }
+                span {
+                    width: 10ch;
+                    font-size: 0.9rem;
+                    &::after {
+                        content: " : ";
+                    }
+                }
+            }
+        }
+        .card-buttons {
+            padding-bottom: 1em;
+            a {
+                width: 70%;
+                padding: 0.3em 1em;
+            }
+        }
+    }
+}
+
+
