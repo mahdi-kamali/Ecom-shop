@@ -103,45 +103,63 @@
   padding: 0.7em 1em;
 }
 
-.admin-panel, .user-panel {
+.admin-panel,
+.user-panel,
+.shopping-cart {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-.admin-panel header, .user-panel header {
+.admin-panel header,
+.user-panel header,
+.shopping-cart header {
   box-shadow: 0rem 0.2rem 0.5rem 0.1rem rgba(0, 0, 0, 0.05);
   padding: 1em 2em;
   width: 100%;
 }
-.admin-panel header .right img, .user-panel header .right img {
+.admin-panel header .right img,
+.user-panel header .right img,
+.shopping-cart header .right img {
   width: 5rem;
   border-radius: 50%;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.admin-panel header .right h1, .user-panel header .right h1 {
+.admin-panel header .right h1,
+.user-panel header .right h1,
+.shopping-cart header .right h1 {
   font-size: 1.4rem;
 }
-.admin-panel header .right small, .user-panel header .right small {
+.admin-panel header .right small,
+.user-panel header .right small,
+.shopping-cart header .right small {
   font-size: 1rem;
 }
-.admin-panel header .left a, .user-panel header .left a {
+.admin-panel header .left a,
+.user-panel header .left a,
+.shopping-cart header .left a {
   width: 17ch;
   padding: 0.5em 1em;
   border-radius: 0.3rem;
   font-size: 0.8rem;
 }
-.admin-panel header .left a iconify-icon, .user-panel header .left a iconify-icon {
+.admin-panel header .left a iconify-icon,
+.user-panel header .left a iconify-icon,
+.shopping-cart header .left a iconify-icon {
   font-size: 1.4rem;
 }
-.admin-panel .panel-container, .user-panel .panel-container {
+.admin-panel .panel-container,
+.user-panel .panel-container,
+.shopping-cart .panel-container {
   display: flex;
   flex-direction: row;
   min-height: 80vh;
   overflow: hidden;
 }
-.admin-panel .panel-container aside, .user-panel .panel-container aside {
+.admin-panel .panel-container aside,
+.user-panel .panel-container aside,
+.shopping-cart .panel-container aside {
   width: 25rem;
   padding: 2em;
   height: 100%;
@@ -149,51 +167,76 @@
   box-shadow: 0rem 0.2rem 0.5rem 0.1rem rgba(0, 0, 0, 0.05);
   border-radius: 0 0 0rem 0.5rem;
 }
-.admin-panel .panel-container aside ul a, .user-panel .panel-container aside ul a {
+.admin-panel .panel-container aside ul a,
+.user-panel .panel-container aside ul a,
+.shopping-cart .panel-container aside ul a {
   font-weight: bold;
   font-size: 0.9rem;
   padding: 0.7em 1em;
 }
-.admin-panel .panel-container aside ul a iconify-icon, .user-panel .panel-container aside ul a iconify-icon {
+.admin-panel .panel-container aside ul a iconify-icon,
+.user-panel .panel-container aside ul a iconify-icon,
+.shopping-cart .panel-container aside ul a iconify-icon {
   font-size: 1.7rem;
 }
-.admin-panel .panel-container aside ul a:hover, .user-panel .panel-container aside ul a:hover {
+.admin-panel .panel-container aside ul a:hover,
+.user-panel .panel-container aside ul a:hover,
+.shopping-cart .panel-container aside ul a:hover {
   background-color: black;
   color: white;
 }
-.admin-panel .panel-container main, .user-panel .panel-container main {
+.admin-panel .panel-container main,
+.user-panel .panel-container main,
+.shopping-cart .panel-container main {
   width: 100%;
   padding: 5%;
 }
-.admin-panel .panel-container main form a, .user-panel .panel-container main form a {
+.admin-panel .panel-container main form a,
+.user-panel .panel-container main form a,
+.shopping-cart .panel-container main form a {
   padding: 0.7em 1em;
   border-radius: 0.3rem;
 }
-.admin-panel .panel-container main table, .user-panel .panel-container main table {
+.admin-panel .panel-container main table,
+.user-panel .panel-container main table,
+.shopping-cart .panel-container main table {
   border-radius: 0.25rem;
   width: 100%;
 }
 .admin-panel .panel-container main table a,
-.admin-panel .panel-container main table button, .user-panel .panel-container main table a,
-.user-panel .panel-container main table button {
+.admin-panel .panel-container main table button,
+.user-panel .panel-container main table a,
+.user-panel .panel-container main table button,
+.shopping-cart .panel-container main table a,
+.shopping-cart .panel-container main table button {
   min-width: 20ch;
   padding: 0.7em 1em;
   font-size: 0.7rem;
 }
-.admin-panel .panel-container main table th, .user-panel .panel-container main table th {
+.admin-panel .panel-container main table th,
+.user-panel .panel-container main table th,
+.shopping-cart .panel-container main table th {
   padding: 1em;
 }
-.admin-panel .panel-container main table th:first-child, .user-panel .panel-container main table th:first-child {
+.admin-panel .panel-container main table th:first-child,
+.user-panel .panel-container main table th:first-child,
+.shopping-cart .panel-container main table th:first-child {
   border-radius: 0 0.5rem 0 0;
 }
-.admin-panel .panel-container main table th:last-child, .user-panel .panel-container main table th:last-child {
+.admin-panel .panel-container main table th:last-child,
+.user-panel .panel-container main table th:last-child,
+.shopping-cart .panel-container main table th:last-child {
   border-radius: 0.5rem 0 0 0;
 }
-.admin-panel .panel-container main table td, .user-panel .panel-container main table td {
+.admin-panel .panel-container main table td,
+.user-panel .panel-container main table td,
+.shopping-cart .panel-container main table td {
   padding: 1em;
   text-align: center;
 }
-.admin-panel .panel-container main table td img, .user-panel .panel-container main table td img {
+.admin-panel .panel-container main table td img,
+.user-panel .panel-container main table td img,
+.shopping-cart .panel-container main table td img {
   width: 100%;
   aspect-ratio: 1/1;
   max-width: 5rem;
@@ -201,10 +244,14 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-.admin-panel .panel-container main table td p, .user-panel .panel-container main table td p {
+.admin-panel .panel-container main table td p,
+.user-panel .panel-container main table td p,
+.shopping-cart .panel-container main table td p {
   max-height: 5rem;
 }
-.admin-panel .panel-container main table td span, .user-panel .panel-container main table td span {
+.admin-panel .panel-container main table td span,
+.user-panel .panel-container main table td span,
+.shopping-cart .panel-container main table td span {
   margin: auto;
   width: 100%;
   max-width: 20rem;
@@ -213,16 +260,23 @@
   align-items: center;
   justify-content: center;
 }
-.admin-panel .panel-container .posts-create form .form-group label, .user-panel .panel-container .posts-create form .form-group label {
+.admin-panel .panel-container .posts-create form .form-group label,
+.user-panel .panel-container .posts-create form .form-group label,
+.shopping-cart .panel-container .posts-create form .form-group label {
   font-size: 1rem;
   width: 14ch;
 }
-.admin-panel .panel-container .posts-create form .form-group label::after, .user-panel .panel-container .posts-create form .form-group label::after {
+.admin-panel .panel-container .posts-create form .form-group label::after,
+.user-panel .panel-container .posts-create form .form-group label::after,
+.shopping-cart .panel-container .posts-create form .form-group label::after {
   content: " : ";
 }
 .admin-panel .panel-container .posts-create form .form-group input,
-.admin-panel .panel-container .posts-create form .form-group textarea, .user-panel .panel-container .posts-create form .form-group input,
-.user-panel .panel-container .posts-create form .form-group textarea {
+.admin-panel .panel-container .posts-create form .form-group textarea,
+.user-panel .panel-container .posts-create form .form-group input,
+.user-panel .panel-container .posts-create form .form-group textarea,
+.shopping-cart .panel-container .posts-create form .form-group input,
+.shopping-cart .panel-container .posts-create form .form-group textarea {
   all: unset;
   padding: 0.3em 1em;
   border-radius: 0.3rem;
@@ -233,49 +287,69 @@
   border: 0.1rem transparent solid;
 }
 .admin-panel .panel-container .posts-create form .form-group input:focus,
-.admin-panel .panel-container .posts-create form .form-group textarea:focus, .user-panel .panel-container .posts-create form .form-group input:focus,
-.user-panel .panel-container .posts-create form .form-group textarea:focus {
+.admin-panel .panel-container .posts-create form .form-group textarea:focus,
+.user-panel .panel-container .posts-create form .form-group input:focus,
+.user-panel .panel-container .posts-create form .form-group textarea:focus,
+.shopping-cart .panel-container .posts-create form .form-group input:focus,
+.shopping-cart .panel-container .posts-create form .form-group textarea:focus {
   box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.1);
   border: 0.1rem black solid;
 }
-.admin-panel .panel-container .posts-create form .form-group textarea, .user-panel .panel-container .posts-create form .form-group textarea {
+.admin-panel .panel-container .posts-create form .form-group textarea,
+.user-panel .panel-container .posts-create form .form-group textarea,
+.shopping-cart .panel-container .posts-create form .form-group textarea {
   height: 20rem;
   max-width: 60ch;
 }
-.admin-panel .panel-container .posts-create form .form-group img, .user-panel .panel-container .posts-create form .form-group img {
+.admin-panel .panel-container .posts-create form .form-group img,
+.user-panel .panel-container .posts-create form .form-group img,
+.shopping-cart .panel-container .posts-create form .form-group img {
   width: 10rem;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .admin-panel .panel-container .posts-create form .form-group a,
-.admin-panel .panel-container .posts-create form .form-group button, .user-panel .panel-container .posts-create form .form-group a,
-.user-panel .panel-container .posts-create form .form-group button {
+.admin-panel .panel-container .posts-create form .form-group button,
+.user-panel .panel-container .posts-create form .form-group a,
+.user-panel .panel-container .posts-create form .form-group button,
+.shopping-cart .panel-container .posts-create form .form-group a,
+.shopping-cart .panel-container .posts-create form .form-group button {
   min-width: 13ch;
   padding: 0.3em 1em;
 }
-.admin-panel .panel-container .users-design .card, .user-panel .panel-container .users-design .card {
+.admin-panel .panel-container .users-design .card,
+.user-panel .panel-container .users-design .card,
+.shopping-cart .panel-container .users-design .card {
   border-radius: 0.5rem;
   box-shadow: 0.3rem 0.3rem 0.5rem 0.1rem rgba(0, 0, 0, 0.1);
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
-.admin-panel .panel-container .users-design .card .card-header img, .user-panel .panel-container .users-design .card .card-header img {
+.admin-panel .panel-container .users-design .card .card-header img,
+.user-panel .panel-container .users-design .card .card-header img,
+.shopping-cart .panel-container .users-design .card .card-header img {
   width: 100%;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0.5rem;
 }
-.admin-panel .panel-container .users-design .card .card-body .email small, .user-panel .panel-container .users-design .card .card-body .email small {
+.admin-panel .panel-container .users-design .card .card-body .email small,
+.user-panel .panel-container .users-design .card .card-body .email small,
+.shopping-cart .panel-container .users-design .card .card-body .email small {
   font-weight: bold;
 }
-.admin-panel .panel-container .users-design .card .card-body .email span, .user-panel .panel-container .users-design .card .card-body .email span {
+.admin-panel .panel-container .users-design .card .card-body .email span,
+.user-panel .panel-container .users-design .card .card-body .email span,
+.shopping-cart .panel-container .users-design .card .card-body .email span {
   width: 10ch;
   font-size: 0.9rem;
 }
-.admin-panel .panel-container .users-design .card .card-body .email span::after, .user-panel .panel-container .users-design .card .card-body .email span::after {
+.admin-panel .panel-container .users-design .card .card-body .email span::after,
+.user-panel .panel-container .users-design .card .card-body .email span::after,
+.shopping-cart .panel-container .users-design .card .card-body .email span::after {
   content: " : ";
 }
 
@@ -310,4 +384,40 @@
 .user-panel .card .card-buttons a {
   width: 70%;
   padding: 0.3em 1em;
+}
+
+.shopping-cart-page {
+  padding: 4em;
+}
+.shopping-cart-page h1 {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+.shopping-cart-page .card {
+  border-radius: 0.5rem;
+  padding-bottom: 2em;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow: 7px 7px 7px rgba(227, 227, 227, 0.3215686275), -7px -7px 7px #ffffff;
+  transition: all 0.5s ease;
+}
+.shopping-cart-page .card .card-header {
+  background-color: white;
+  padding: 2em;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.shopping-cart-page .card .card-header img {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.shopping-cart-page .card .card-buttons {
+  width: 30ch;
+  margin: auto;
+  font-size: 0.8rem;
+}
+.shopping-cart-page .card .card-buttons a {
+  width: 100%;
+  padding: 0.7em;
+  border-radius: 0.3rem;
+}
+.shopping-cart-page .card .card-buttons a iconify-icon {
+  font-size: 1rem;
 }/*# sourceMappingURL=all.css.map */

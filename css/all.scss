@@ -122,7 +122,9 @@ $buttons-fonts-size: 0.8rem;
     }
 }
 
-.admin-panel , .user-panel {
+.admin-panel,
+.user-panel,
+.shopping-cart {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -353,4 +355,44 @@ $buttons-fonts-size: 0.8rem;
     }
 }
 
-
+.shopping-cart-page {
+    padding: 4em;
+    h1 {
+        font-weight: bold;
+        font-size: 1.7rem;
+    }
+    
+    .card {
+        border-radius: 0.5rem;
+        padding-bottom: 2em;
+        background: linear-gradient(145deg, #e6e6e6, #ffffff);
+        box-shadow: 7px 7px 7px #e3e3e352, -7px -7px 7px #ffffff;
+        transition: all 0.5s ease;
+        &:hover {
+        }
+       
+        .card-header {
+            background-color: white;
+            padding: 2em;
+            border-radius: 0.5rem 0.5rem 0 0;
+            img {
+                border-radius: 0.5rem 0.5rem 0 0;
+            }
+        }
+        .card-body {
+        }
+        .card-buttons {
+            width: 30ch;
+            margin: auto;
+            font-size: 0.8rem;
+            a {
+                iconify-icon {
+                    font-size: 1rem;
+                }
+                width: 100%;
+                padding: 0.7em;
+                border-radius: 0.3rem;
+            }
+        }
+    }
+}
