@@ -3,15 +3,13 @@
 
 const buttonElement = document.getElementById('button-element')
 const imgElement = document.getElementById('image-element')
+const uploaderElement = document.getElementById('uploader-element')
 var upload = new Upload({ apiKey: "public_12a1xpe5agD1YmYKXeuwif2JYb69" })
 
 
 function openPage(url) {
-
-    console.log(url);
     const temp =
         `https://www.photopea.com/#%7B%22files%22:%5B%22${url}%22%5D,%22environment%22:%7B%7D%7D`
-
     window.open(temp);
 }
 
@@ -19,7 +17,8 @@ buttonElement.onclick = (event) => {
     event.preventDefault()
     const url = imgElement.src
     const fileName = 'myFile.jpg'
-    alert('درحال هدایت به سایت طراحی لطفا منتظر بمانید ...')
+    uploaderElement.innerText =
+        'درحال هدایت به سایت طراحی لطفا منتظر بمانید این کار میتواند چند ثانیه طول بکشد ....'
     fetch(url)
         .then(async response => {
             const contentType = response.headers.get('content-type')
