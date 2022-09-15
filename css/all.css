@@ -420,4 +420,8 @@
 }
 .shopping-cart-page .card .card-buttons a iconify-icon {
   font-size: 1rem;
+}
+
+#image-element {
+  display: none;
 }/*# sourceMappingURL=all.css.map */

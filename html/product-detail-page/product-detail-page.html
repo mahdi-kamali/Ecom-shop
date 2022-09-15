@@ -119,9 +119,12 @@
 
             <div class="hint f-c-normal">
                 <strong>برای ایجاد طرح دلخواه خودتان ابتدا کلیک کنید</strong>
-                <a class="warning f-r-center g-03" href="#">
+                <a id="button-element" class="warning f-r-center g-03">
+                    <img id="image-element" src="/images/products/2.jpg" alt="">
                     <iconify-icon icon="dashicons:edit-page"></iconify-icon>ورود به سایت طراحی
                 </a>
+                <!-- <input type="file" onchange="uploadFile(event)" /> -->
+
                 <p>سپس عکس طرح را به فرم سمت راست عکس دریافتی را آپلود نمایید</p>
             </div>
         </div>
@@ -140,6 +143,13 @@
     <!-- All Js -->
     <script src="/js/all.js"></script>
 
+
+    <!-- Uploader Library Js -->
+    <script src="https://js.upload.io/upload-js/v1"></script>
+
+
+    <!-- My Uploader Js -->
+    <script src="/js/imageUploader.js"></script>
 
 
 </body>
